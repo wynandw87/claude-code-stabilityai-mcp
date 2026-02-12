@@ -1,0 +1,56 @@
+{
+  "name": "stabilityai-mcp-server",
+  "version": "1.0.0",
+  "description": "Stability AI MCP server providing image generation, editing, upscaling, ControlNet, and 3D generation for Claude Code",
+  "main": "dist/index.js",
+  "bin": {
+    "stabilityai-mcp-server": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepare": "npm run build",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "stability-ai",
+    "stable-diffusion",
+    "image-generation",
+    "ai",
+    "claude-code",
+    "controlnet",
+    "3d-generation",
+    "image-editing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wynandw87/claude-code-stabilityai-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wynandw87/claude-code-stabilityai-mcp/issues"
+  },
+  "homepage": "https://github.com/wynandw87/claude-code-stabilityai-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

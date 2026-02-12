@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.js.map
+*.d.ts
+!scripts/*.js
+.env
+generated-images/
+generated-3d/
